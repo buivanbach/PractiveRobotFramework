@@ -1,0 +1,2507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-08-13T13:16:36.849332" rpa="false" schemaversion="5">
+<suite id="s1" name="Bai3" source="C:\Users\i-bachbv\PycharmProjects\PracticeRobot\hello test case\bai3.robot">
+<test id="s1-t1" name="Bai3" line="20">
+<kw name="GetListEvenNumber">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${curDate} = 2024-08-13 13:16:36.865</msg>
+<var>${curDate}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${day} = 13</msg>
+<var>${day}</var>
+<arg>${curDate}</arg>
+<arg>%d</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${day} = 13</msg>
+<var>${day}</var>
+<arg>${day}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${month} = 08</msg>
+<var>${month}</var>
+<arg>${curDate}</arg>
+<arg>%m</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${month} = 8</msg>
+<var>${month}</var>
+<arg>${month}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${total} = 0</msg>
+<var>${total}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${n} = 104</msg>
+<var>${n}</var>
+<arg>${day} * ${month}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.864955" level="INFO">${total} = 2</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.015624"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.015624"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 6</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 12</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 20</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 10</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 30</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 11</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">11</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 12</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 42</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">12</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 13</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">13</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 14</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 56</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">14</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 15</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">15</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 16</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 72</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">16</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 17</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">17</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 18</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 90</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">18</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 19</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">19</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 20</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 110</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">20</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 21</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">21</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 22</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 132</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">22</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 23</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">23</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 24</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 156</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">24</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 25</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">25</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 26</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 182</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">26</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 27</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">27</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 28</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 210</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">28</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 29</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">29</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 30</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 240</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">30</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 31</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">31</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 32</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 272</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">32</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 33</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">33</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 34</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${total} = 306</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">34</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.880579" level="INFO">${i} = 35</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</if>
+<var name="${i}">35</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 36</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.015680"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 342</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">36</var>
+<status status="PASS" start="2024-08-13T13:16:36.880579" elapsed="0.015680"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 37</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">37</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 38</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 380</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">38</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 39</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">39</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 40</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 420</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">40</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 41</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">41</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 42</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 462</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">42</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 43</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">43</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 44</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 506</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">44</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 45</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">45</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 46</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 552</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">46</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 47</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">47</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${i} = 48</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.896259" level="INFO">${total} = 600</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</if>
+<var name="${i}">48</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 49</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">49</var>
+<status status="PASS" start="2024-08-13T13:16:36.896259" elapsed="0.006060"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 50</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 650</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">50</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 51</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">51</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 52</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 702</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">52</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 53</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">53</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 54</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 756</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">54</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 55</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">55</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 56</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 812</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">56</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 57</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">57</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 58</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 870</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">58</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 59</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">59</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 60</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 930</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">60</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 61</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">61</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 62</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 992</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">62</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 63</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">63</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 64</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1056</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">64</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 65</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">65</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 66</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1122</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">66</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 67</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">67</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 68</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1190</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">68</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 69</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">69</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 70</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1260</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">70</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 71</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">71</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 72</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1332</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">72</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 73</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">73</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 74</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1406</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">74</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 75</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">75</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 76</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1482</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">76</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 77</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">77</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 78</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1560</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">78</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 79</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">79</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 80</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1640</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">80</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 81</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">81</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 82</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1722</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">82</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 83</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">83</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 84</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${total} = 1806</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</if>
+<var name="${i}">84</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.902319" level="INFO">${i} = 85</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.902319" elapsed="0.015691"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.015691"/>
+</if>
+<var name="${i}">85</var>
+<status status="PASS" start="2024-08-13T13:16:36.902319" elapsed="0.015691"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 86</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 1892</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">86</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 87</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">87</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 88</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 1980</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">88</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 89</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">89</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 90</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2070</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">90</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 91</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">91</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 92</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2162</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">92</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 93</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">93</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 94</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2256</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">94</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 95</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">95</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 96</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2352</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">96</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 97</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">97</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 98</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2450</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">98</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 99</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">99</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 100</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2550</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">100</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 101</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">101</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 102</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${total} = 2652</msg>
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">102</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">${i} = 103</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total}</var>
+<arg>${total} + ${i}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</if>
+<var name="${i}">103</var>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${n}</value>
+<value>1</value>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.053055"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T13:16:36.918010" level="INFO">2652</msg>
+<arg>${total}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T13:16:36.918010" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.053055"/>
+</kw>
+<status status="PASS" start="2024-08-13T13:16:36.864955" elapsed="0.053055"/>
+</test>
+<status status="PASS" start="2024-08-13T13:16:36.849332" elapsed="0.068678"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bai3">Bai3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

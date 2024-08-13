@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-08-13T11:08:41.605074" rpa="false" schemaversion="5">
+<suite id="s1" name="Bai1" source="C:\Users\i-bachbv\PycharmProjects\PracticeRobot\hello test case\bai1.robot">
+<test id="s1-t1" name="Bai 1" line="26">
+<kw name="Calculator">
+<if>
+<branch type="IF" condition="${operations} == &quot;+&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}+${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;-&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T11:08:41.610437" level="INFO">${result} = -1</msg>
+<var>${result}</var>
+<arg>${number1}-${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;*&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}*${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;/&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}/${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>wrong operation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</return>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</if>
+<arg>1</arg>
+<arg>2</arg>
+<arg>"-"</arg>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.000000"/>
+</kw>
+<kw name="Calculator">
+<if>
+<branch type="IF" condition="${operations} == &quot;+&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T11:08:41.626062" level="INFO">${result} = 5</msg>
+<var>${result}</var>
+<arg>${number1}+${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;-&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}-${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;*&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}*${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;/&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}/${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>wrong operation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</return>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:08:41.626062" elapsed="0.000000"/>
+</if>
+<arg>5</arg>
+<arg>0</arg>
+<arg>"+"</arg>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.015625"/>
+</kw>
+<kw name="Calculator">
+<if>
+<branch type="IF" condition="${operations} == &quot;+&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}+${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.626062" elapsed="0.001108"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;-&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}-${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;*&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T11:08:41.627170" level="INFO">${result} = 5</msg>
+<var>${result}</var>
+<arg>${number1}*${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;/&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}/${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>wrong operation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</return>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.627170" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:08:41.626062" elapsed="0.001108"/>
+</if>
+<arg>1</arg>
+<arg>5</arg>
+<arg>"*"</arg>
+<status status="PASS" start="2024-08-13T11:08:41.626062" elapsed="0.001108"/>
+</kw>
+<kw name="Calculator">
+<if>
+<branch type="IF" condition="${operations} == &quot;+&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}+${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;-&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}-${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;*&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number1}*${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${operations} == &quot;/&quot;">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-08-13T11:08:41.628209" level="INFO">${result} = 2.0</msg>
+<var>${result}</var>
+<arg>${number1}/${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>wrong operation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</return>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:08:41.628209" elapsed="0.000000"/>
+</if>
+<arg>4</arg>
+<arg>2</arg>
+<arg>"/"</arg>
+<status status="PASS" start="2024-08-13T11:08:41.627170" elapsed="0.001039"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:08:41.610437" elapsed="0.017772"/>
+</test>
+<status status="PASS" start="2024-08-13T11:08:41.609066" elapsed="0.019143"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bai1">Bai1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

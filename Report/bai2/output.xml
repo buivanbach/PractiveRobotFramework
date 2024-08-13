@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-08-13T11:48:09.705253" rpa="false" schemaversion="5">
+<suite id="s1" name="Bai2" source="C:\Users\i-bachbv\PycharmProjects\PracticeRobot\hello test case\bai2.robot">
+<test id="s1-t1" name="Bai2" line="17">
+<kw name="IsPrimeNumber">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${result} = True</msg>
+<var>${result}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}"/>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>2</value>
+<value>${number} / 2</value>
+<value>1</value>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">True</msg>
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<kw name="IsPrimeNumber">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${result} = True</msg>
+<var>${result}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${result} = False</msg>
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">2.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>2</value>
+<value>${number} / 2</value>
+<value>1</value>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">False</msg>
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<arg>6</arg>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<kw name="IsPrimeNumber">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${result} = True</msg>
+<var>${result}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">2.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">3.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>2</value>
+<value>${number} / 2</value>
+<value>1</value>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">True</msg>
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<arg>7</arg>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<kw name="IsPrimeNumber">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${result} = True</msg>
+<var>${result}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">2.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">3.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">4.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">5.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.720881" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</if>
+<var name="${i}">6.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>2</value>
+<value>${number} / 2</value>
+<value>1</value>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.000000"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">True</msg>
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.015622"/>
+</kw>
+<arg>13</arg>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.015622"/>
+</kw>
+<kw name="IsPrimeNumber">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">${result} = True</msg>
+<var>${result}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</if>
+<var name="${i}">2.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number} % ${i} == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">${result} = False</msg>
+<var>${result}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</break>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</if>
+<var name="${i}">3.0</var>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>2</value>
+<value>${number} / 2</value>
+<value>1</value>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-13T11:48:09.736503" level="INFO">False</msg>
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<arg>21</arg>
+<status status="PASS" start="2024-08-13T11:48:09.736503" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:48:09.720881" elapsed="0.015622"/>
+</test>
+<status status="PASS" start="2024-08-13T11:48:09.705253" elapsed="0.031250"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bai2">Bai2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
