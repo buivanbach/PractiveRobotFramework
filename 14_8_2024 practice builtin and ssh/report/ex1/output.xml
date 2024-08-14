@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-08-14T10:05:15.938483" rpa="false" schemaversion="5">
+<suite id="s1" name="Ex1" source="C:\Users\i-bachbv\PycharmProjects\PracticeRobot\14_8_2024 practice builtin and ssh\ex1.robot">
+<test id="s1-t1" name="Test case 1" line="18">
+<kw name="Connect SSH">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${host}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2024-08-14T10:05:16.040379" elapsed="0.001000"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2024-08-14T10:05:16.041379" level="INFO">Logging into '172.20.107.91:22' as 'root'.</msg>
+<msg time="2024-08-14T10:05:17.491229" level="INFO">Read output: Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Wed Aug 14 10:01:53 2024 from 172.20.109.45
+[?2004h[root@SIOS91 ~]#</msg>
+<arg>${username}</arg>
+<arg>${passwd}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="PASS" start="2024-08-14T10:05:16.041379" elapsed="1.449850"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:05:17.492239" level="INFO">Executing command 'ls /'.</msg>
+<msg time="2024-08-14T10:05:17.567595" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:05:17.567595" level="INFO">${stdout} = afs
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var</msg>
+<var>${stdout}</var>
+<arg>ls /</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.492239" elapsed="0.076360"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-14T10:05:17.569594" level="INFO">afs
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var</msg>
+<arg>${stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.568599" elapsed="0.000995"/>
+</kw>
+<status status="PASS" start="2024-08-14T10:05:16.040379" elapsed="1.529215"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:05:17.571819" level="INFO">Executing command 'echo 'Line 1' &gt; /root/lifekeeper.log'.</msg>
+<msg time="2024-08-14T10:05:17.659652" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:05:17.660625" level="INFO">${stdout} = </msg>
+<var>${stdout}</var>
+<arg>echo 'Line 1' &gt; /root/lifekeeper.log</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.570774" elapsed="0.089851"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-14T10:05:17.662565" level="INFO"/>
+<arg>${stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.662565" elapsed="0.000995"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:05:17.665542" level="INFO">Executing command 'cd /root &amp;&amp;'.</msg>
+<msg time="2024-08-14T10:05:17.768360" level="INFO">Command exited with return code 2.</msg>
+<arg>cd /root &amp;&amp;</arg>
+<arg>ls -a</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.664537" elapsed="0.103823"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:05:17.772228" level="INFO">Executing command 'cat lifekeeper.log'.</msg>
+<msg time="2024-08-14T10:05:17.860886" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:05:17.861838" level="INFO">${stdout} = Line 1</msg>
+<var>${stdout}</var>
+<arg>cat lifekeeper.log</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.771233" elapsed="0.090605"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-14T10:05:17.864399" level="INFO">Line 1</msg>
+<arg>${stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-14T10:05:17.863389" elapsed="0.001010"/>
+</kw>
+<status status="PASS" start="2024-08-14T10:05:16.040379" elapsed="1.825862"/>
+</test>
+<status status="PASS" start="2024-08-14T10:05:15.942473" elapsed="1.928672"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex1">Ex1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

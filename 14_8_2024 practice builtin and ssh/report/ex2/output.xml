@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-08-14T10:14:01.198406" rpa="false" schemaversion="5">
+<suite id="s1" name="Ex2" source="C:\Users\i-bachbv\PycharmProjects\PracticeRobot\14_8_2024 practice builtin and ssh\ex2.robot">
+<test id="s1-t1" name="Test case 2" line="19">
+<kw name="Connect SSH">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${host}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2024-08-14T10:14:01.297691" elapsed="0.000000"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2024-08-14T10:14:01.297691" level="INFO">Logging into '172.20.107.91:22' as 'root'.</msg>
+<msg time="2024-08-14T10:14:02.783227" level="INFO">Read output: Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Wed Aug 14 10:09:54 2024 from 172.20.109.45
+[?2004h[root@SIOS91 ~]#</msg>
+<arg>${username}</arg>
+<arg>${passwd}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="PASS" start="2024-08-14T10:14:01.297691" elapsed="1.485536"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:14:02.784270" level="INFO">Executing command 'ls /'.</msg>
+<msg time="2024-08-14T10:14:02.860032" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:14:02.860032" level="INFO">${stdout} = afs
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var</msg>
+<var>${stdout}</var>
+<arg>ls /</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:14:02.784270" elapsed="0.075762"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-14T10:14:02.862100" level="INFO">afs
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var</msg>
+<arg>${stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-14T10:14:02.861097" elapsed="0.001003"/>
+</kw>
+<status status="PASS" start="2024-08-14T10:14:01.297691" elapsed="1.564409"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:14:02.864075" level="INFO">Executing command 'cd /root &amp;&amp; ls -a'.</msg>
+<msg time="2024-08-14T10:14:02.984202" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:14:02.984202" level="INFO">${stdout} = .
+..
+anaconda-ks.cfg
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.cache
+.config
+.cshrc
+Desktop
+Documents
+Downloads
+lifekeeper.log
+.local
+Music
+Pictures
+Public
+.ssh
+.tcshrc
+Templates
+Videos
+.vimin...</msg>
+<var>${stdout}</var>
+<arg>cd /root &amp;&amp; ls -a</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:14:02.864075" elapsed="0.120127"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${stdout}</arg>
+<arg>lifekeeper.log</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-08-14T10:14:02.986247" elapsed="0.001004"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2024-08-14T10:14:02.988235" level="INFO">Executing command 'cat lifekeeper.log'.</msg>
+<msg time="2024-08-14T10:14:03.077368" level="INFO">Command exited with return code 0.</msg>
+<msg time="2024-08-14T10:14:03.077368" level="INFO">${stdout} = Line 1</msg>
+<var>${stdout}</var>
+<arg>cat lifekeeper.log</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2024-08-14T10:14:02.988235" elapsed="0.089133"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${stdout}</arg>
+<arg>Line 1</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-08-14T10:14:03.079371" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2024-08-14T10:14:01.296698" elapsed="1.785160"/>
+</test>
+<status status="PASS" start="2024-08-14T10:14:01.202397" elapsed="1.883040"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex2">Ex2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
